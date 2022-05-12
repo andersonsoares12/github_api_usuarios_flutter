@@ -15,9 +15,9 @@ class _HomeState extends State<Home> {
 
   _success() {
     return Container(
-      padding: EdgeInsets.fromLTRB(0, 500, 0, 0),
+      padding: const EdgeInsets.fromLTRB(0, 500, 0, 0),
       child: ListView.builder(
-        padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+        padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
         itemCount: controller.todos.length,
         itemBuilder: (context, index) {
           var todo = controller.todos[index];
@@ -27,11 +27,11 @@ class _HomeState extends State<Home> {
                 height: 89,
                 width: 368,
                 margin: const EdgeInsets.fromLTRB(22.0, 5, 0, 0),
-                padding: EdgeInsets.fromLTRB(110, 20, 5, 10),
+                padding: const EdgeInsets.fromLTRB(110, 20, 5, 10),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  borderRadius: const BorderRadius.all(Radius.circular(20.0)),
                   image: DecorationImage(
                     alignment: AlignmentDirectional.bottomStart,
                     image: NetworkImage(todo.avatarUrl),
@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
                 ),
                 child: Text(
                   todo.login,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.green,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -49,9 +49,9 @@ class _HomeState extends State<Home> {
                 ),
               ),
               Container (
-                padding: EdgeInsets.fromLTRB(135, 60, 5, 10),
+                padding: const EdgeInsets.fromLTRB(135, 60, 5, 10),
                 child: Text(todo.htmlUrl,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue
@@ -59,8 +59,8 @@ class _HomeState extends State<Home> {
                 ),
               ),
               Container (
-                padding: EdgeInsets.fromLTRB(310, 15, 5, 10),
-                child: Icon(
+                padding: const EdgeInsets.fromLTRB(310, 15, 5, 10),
+                child: const Icon(
           Icons.whatshot,
           color: Colors.deepOrange,
           size: 24.0,
@@ -68,8 +68,8 @@ class _HomeState extends State<Home> {
           ),
               ),
               Container (
-                padding: EdgeInsets.fromLTRB(340, 20, 5, 0),
-                child: Text('5.0',
+                padding: const EdgeInsets.fromLTRB(340, 20, 5, 0),
+                child: const Text('5.0',
                   style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -141,425 +141,6 @@ class _HomeState extends State<Home> {
               allowDrawingOutsideViewBox: true,
               fit: BoxFit.fill,
             )),
-          ),
-          Pinned.fromPins(
-            Pin(start: 25.0, end: 25.0),
-            Pin(size: 84.0, end: 10.0),
-            child:
-                // Adobe XD layer: 'card 3' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'card bg' (shape)
-                Container(
-                  decoration: BoxDecoration(
-                    color: const Color(0xffffffff),
-                    borderRadius: BorderRadius.circular(5.0),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0x0a000000),
-                        offset: Offset(0, 10),
-                        blurRadius: 15,
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 30.0, end: 12.0),
-                  Pin(size: 10.0, middle: 0.7162),
-                  child: const Text(
-                    '4.6 km',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 8,
-                      color: Color(0xff000000),
-                      letterSpacing: 0.12,
-                      height: 2.375,
-                    ),
-                    textHeightBehavior:
-                        TextHeightBehavior(applyHeightToFirstAscent: false),
-                    softWrap: false,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 9.4, end: 41.4),
-                  Pin(size: 11.2, middle: 0.718),
-                  child:
-                      // Adobe XD layer: 'location icon' (group)
-                      Stack(
-                    children: <Widget>[
-                      Container(),
-                      Align(
-                        alignment: const Alignment(0.039, -0.241),
-                        child: Container(
-                          width: 4.0,
-                          height: 4.0,
-                          decoration: const BoxDecoration(
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.all(
-                                Radius.elliptical(9999.0, 9999.0)),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 1.0, end: 56.8),
-                  Pin(size: 10.7, middle: 0.723),
-                  child:
-                      // Adobe XD layer: 'divider' (shape)
-                      SvgPicture.string(
-                    _svg_yxtm3i,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                const Align(
-                  alignment: Alignment(0.586, 0.432),
-                  child: SizedBox(
-                    width: 18.0,
-                    height: 10.0,
-                    child: Text(
-                      '4.5',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 8,
-                        color: Color(0xff000000),
-                        letterSpacing: 0.12,
-                        height: 2.375,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                Container(),
-                const Align(
-                  alignment: Alignment(-0.277, 0.415),
-                  child: SizedBox(
-                    width: 110.0,
-                    height: 19.0,
-                    child: Text(
-                      'Eyes Specialist',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 14,
-                        color: Color(0xffababab),
-                        letterSpacing: 0.21,
-                        fontWeight: FontWeight.w300,
-                        height: 1.9285714285714286,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                const Align(
-                  alignment: Alignment(-0.202, -0.475),
-                  child: SizedBox(
-                    width: 130.0,
-                    height: 23.0,
-                    child: Text(
-                      'Dr. Zac Wolff',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 17,
-                        color: Color(0xff363636),
-                        letterSpacing: 0.255,
-                        fontWeight: FontWeight.w700,
-                        height: 1.58,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 54.0, start: 12.0),
-                  Pin(start: 12.0, end: 12.0),
-                  child:
-                      // Adobe XD layer: 'img' (shape)
-                      Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xfff7f7f7),
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 54.0, start: 12.0),
-                  Pin(start: 12.0, end: 12.0),
-                  child:
-                      // Adobe XD layer: 'img bg' (shape)
-                      Container(
-                    decoration: BoxDecoration(
-                      image: const DecorationImage(
-                        image: AssetImage('assets/images/users3.jpg'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 25.0, end: 25.0),
-            Pin(size: 84.0, end: 114.0),
-            child:
-                // Adobe XD layer: 'card 2' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'card bg' (shape)
-                Container(
-                  decoration: BoxDecoration(
-                    color: const Color(0xffffffff),
-                    borderRadius: BorderRadius.circular(5.0),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0x0a000000),
-                        offset: Offset(0, 10),
-                        blurRadius: 15,
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 30.0, end: 12.0),
-                  Pin(size: 10.0, middle: 0.7162),
-                  child: const Text(
-                    '3.1 km',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 8,
-                      color: Color(0xff000000),
-                      letterSpacing: 0.12,
-                      height: 2.375,
-                    ),
-                    textHeightBehavior:
-                        TextHeightBehavior(applyHeightToFirstAscent: false),
-                    softWrap: false,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 9.4, end: 41.4),
-                  Pin(size: 11.2, middle: 0.718),
-                  child:
-                      // Adobe XD layer: 'location icon' (group)
-                      Stack(
-                    children: <Widget>[
-                      Container(),
-                      Align(
-                        alignment: const Alignment(0.039, -0.241),
-                        child: Container(
-                          width: 4.0,
-                          height: 4.0,
-                          decoration: const BoxDecoration(
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.all(
-                                Radius.elliptical(9999.0, 9999.0)),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 1.0, end: 56.8),
-                  Pin(size: 10.7, middle: 0.723),
-                  child:
-                      // Adobe XD layer: 'divider' (shape)
-                      SvgPicture.string(
-                    _svg_jtb5l,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                const Align(
-                  alignment: Alignment(0.586, 0.432),
-                  child: SizedBox(
-                    width: 18.0,
-                    height: 10.0,
-                    child: Text(
-                      '4.7',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 8,
-                        color: Color(0xff000000),
-                        letterSpacing: 0.12,
-                        height: 2.375,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                Container(),
-                const Align(
-                  alignment: Alignment(-0.289, 0.415),
-                  child: SizedBox(
-                    width: 110.0,
-                    height: 19.0,
-                    child: Text(
-                      'Bone Specialist',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 14,
-                        color: Color(0xffababab),
-                        letterSpacing: 0.21,
-                        fontWeight: FontWeight.w300,
-                        height: 1.92,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                const Align(
-                  alignment: Alignment(-0.277, -0.475),
-                  child: SizedBox(
-                    width: 110.0,
-                    height: 23.0,
-                    child: Text(
-                      'Dr. Soares',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 17,
-                        color: Color(0xff363636),
-                        letterSpacing: 0.255,
-                        fontWeight: FontWeight.w700,
-                        height: 1.58,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 54.0, start: 12.0),
-                  Pin(start: 12.0, end: 12.0),
-                  child:
-                      // Adobe XD layer: 'img bg' (shape)
-                      Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xfff7f7f7),
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 54.0, start: 12.0),
-                  Pin(start: 12.0, end: 12.0),
-                  child:
-                      // Adobe XD layer: 'img' (shape)
-                      Container(
-                    decoration: BoxDecoration(
-                      image: const DecorationImage(
-                        image: AssetImage('assets/images/users2.jpg'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 25.0, end: 25.0),
-            Pin(size: 84.0, middle: 0.7005),
-            child:
-                // Adobe XD layer: 'card 1' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'card bg' (shape)
-                Container(
-                  decoration: BoxDecoration(
-                    color: const Color(0xffffffff),
-                    borderRadius: BorderRadius.circular(5.0),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0x0a000000),
-                        offset: Offset(0, 10),
-                        blurRadius: 15,
-                      ),
-                    ],
-                  ),
-                ),
-
-                ///LISTA USUARIOS DO API DO GITH
-                const Align(
-                  alignment: Alignment(0.612, 0.432),
-                  child: SizedBox(
-                    width: 20.0,
-                    height: 10.0,
-                    child: Text(
-                      '10.0',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 8,
-                        color: Color(0xff000000),
-                        letterSpacing: 0.12,
-                        height: 2.375,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                Container(),
-                const Align(
-                  alignment: Alignment(-0.333, 0.415),
-                  child: SizedBox(
-                    width: 82.0,
-                    height: 19.0,
-                    child: Text(
-                      'Heart surgen',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 14,
-                        color: Color(0xffababab),
-                        letterSpacing: 0.21,
-                        fontWeight: FontWeight.w300,
-                        height: 1.9285714285714286,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-                const Align(
-                  alignment: Alignment(-0.012, -0.475),
-                  child: SizedBox(
-                    width: 179.0,
-                    height: 23.0,
-                    child: Text(
-                      'Dr. Anderson Soares',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 17,
-                        color: Color(0xff363636),
-                        letterSpacing: 0.255,
-                        fontWeight: FontWeight.w700,
-                        height: 1.58,
-                      ),
-                      textHeightBehavior:
-                          TextHeightBehavior(applyHeightToFirstAscent: false),
-                      softWrap: false,
-                    ),
-                  ),
-                ),
-              ],
-            ),
           ),
           Pinned.fromPins(
             Pin(size: 160.0, start: 25.0),
